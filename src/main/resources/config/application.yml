@@ -1,0 +1,17 @@
+spring:
+  thymeleaf:
+    cache: false
+
+server:
+  port: 8443
+  ssl:
+    keyStore: classpath:keystore.jks
+    keyStorePassword: password
+    keyStoreType: JKS
+    keyAlias: tomcat
+
+
+firebase:
+  googleapi:
+    url: https://fcm.googleapis.com
+    key: key=server_key
